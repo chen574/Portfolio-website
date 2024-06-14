@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about me">About me</a></li>
+                    <li><a href="#previous">Previous work</a></li>
+                    <li><a href="#Uni">Uni work</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>CreaTe student at UT</p>
+                <h1>Hi, I'm <span>Chen</span><br>Welcome to my portfolio</h1>
+            </div>
+            <a href="#about me" class="aboutmebtn">About me</a>
+        </div>
+    </div> 
+    <div id="about me">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutme1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="context1">My name is Xuanhe Chen, currently a first year student at the University of
+                        Twente. Partying is definitely something I would love to do with friends 
+                        during the weekends. Besides that, I have many hobbies like traveling, 
+                        photographing, gaming, and tennis. Tennis is one of my greatest hobbies, 
+                        and I have been playing tennis for 5 years.</p>
+                    <p class="context2"> For studying, I am more of an engineering person. I enjoy doing math or 
+                        physics, and solving puzzles, But I do not like reading, nor writing. 
+                        I feel like there just not for engineering students, at least not for me.</p>
+
+                    <div class="tap-titles">
+                        <p class="tap-links active-link" onclick="opentap('skills')">Skills</p>
+                        <p class="tap-links" onclick="opentap('education')">Education</p>
+                    </div>
+                    <div class="tap-contents active-tap" id="skills">
+                        <ul>
+                            <li><span>Software</span><br>Python, HTML, JAVA, CSS, Processing</li>
+                            <li><span>Hardware</span><br>Building circuits for Arduino</li>
+                            <li><span>3D modeling</span><br>Blender and Unity</li>
+                        </ul>
+                    </div>
+                    <div class="tap-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2023</span><br>Twente Pathway College (TPC)</li>
+                            <li><span>2023 - current</span><br>University of Twente - CreaTe</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="previous">
+        <div class="container">
+            <h1 class="sub-title">Previous work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/filehandling2.png">
+                    <div class="layer">
+                    <h3>Programming-File handling</h3>
+                    <p>This is a Python program that can provide the wordcount of an input file.</p>
+                    <a href="#filehandling">Learn more</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/chemical equation2.png">
+                    <div class="layer">
+                    <h3>Programming-Chemical equations</h3>
+                    <p>This is a Python program that can automatically balance a input chemical equation.</p>
+                    <a href="#chemicalequation">Lear more</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/spaghetti 1.jpg">
+                    <div class="layer">
+                    <h3>Creativity-Spaghetti bridge</h3>
+                    <p>In this project, I built an spaghetti bridge from scratch, fully designed by meself.</p>
+                    <a href="#bridge">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Home</a>
+        </div>
+    </div>
+    <div id="filehandling">
+        <div class="container">
+            <h1 class="sub-title">Programming-File handling</h1>
+            <div class="filerow">
+                <div class="fimage">
+                    <img src="images/filehandling2.png">
+                </div>
+                <div class="fcontext">
+                    <h2>This project is one of the projects from my foundation year at the 
+                        University of Twente. In this project, I created a python program that 
+                        can output the word count of a file in any format.</h2>
+                    <p><br><br>The most difficult
+                        part of this project is how to tackle the PDF document. Because the 
+                        program cannot identify the word in the PDF document, therefore, I have 
+                        to convert the file type to TXT which is the easiest way. Moreover, 
+                        during this project, I had a deeper understanding about how computers 
+                        tackle file handling.</p>
+                </div>
+                <a href="#" class="fhomebtn">Home</a>
+                <a href="#chemicalequation" class="fnextbtn">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="chemicalequation">
+        <div class="container">
+            <h1 class="sub-title">Programming-chemical equation</h1>
+            <div class="chemicalrow">
+                <div class="chemimage">
+                    <img src="images/chemical equation2.png" >
+                </div>
+                <div class="chemcontext">
+                    <h2 class="chemcontext1">
+                        This was my final project during my foundation year<br>at the University of 
+                        Twente. The task was to use all<br>the knowledge of what I have learned about 
+                        Python<br>programming and chemistry to create my own chem-<br>-ical equation balancing
+                        program.</h2>
+                    <p class="chemcontext2">This project was very hard, but also was the most 
+                        interesting project<br>Because this was the last project for the entire 
+                        foundation year, so<br>we have all the knowledge about math, programming, 
+                        and chemistry<br>and for this project we<br>have to combine the knowledge of 
+                        what we have learned.</p>
+                </div>
+            </div>
+            <a href="#" class="chemhomebtn">Home</a>
+            <a href="#bridge" class="chemnextbtn">Next</a>
+        </div>
+    </div>
+
+    <div id="bridge">
+        <div class="container">
+            <h1 class="sub-title">Spaghetti bridge</h1>
+            <div class="spaghettirow">
+                <div class="spaghettiimage">
+                    <img src="images/spagheti2.jpg">
+                </div>
+
+                <div class="spaghetticontext">
+                    <div class="spaghetticontext1">
+                        <h2>This project was also very meaningful as well, because this was the first 
+                            project ever since I came to The Netherlands.</h2>
+                    </div>
+                    <div class="spaghetticontext2">
+                        <p>This was the first project during my foundation year at the University 
+                            of Twente. For this project, we have to use what we have learned, and 
+                            design and craft out our own spaghetti bridge, and at the end the bridge 
+                            should be able to hold more than 10 KG weight. Me and my teammate worked 
+                            very well even though it was our first time working together.</p>
+                    </div>
+                </div>
+                <a href="#Uni" class="bridgeuni">Uni work</a>
+                <a href="#" class="bridgehomebtn">Home</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="Uni">
+        <div class="container">
+            <h1 class="sub-title">Uni work</h1>
+            <div class="working-list">
+                <div class="works">
+                    <img src="images/Uniwork1.png">
+                    <div class="layers">
+                        <h3>3D modeling-JapaneseHouse</h3>
+                        <p>This is a Japanese house 3D model made through Blender.</p>
+                        <a href="#japanese">Learn more</a>
+                    </div>
+                </div>
+                <div class="works">
+                    <img src="images/Uniwork2.png">
+                    <div class="layers">
+                        <h3>3D modeling-Glider</h3>
+                        <p>This is a 3D model of the Leonardo Da Vinci flying machine made in Blender.</p>
+                        <a href="#glider">Learn more</a>
+                    </div>
+                </div>
+                <div class="works">
+                    <img src="images/Uniwork3.jpg">
+                    <div class="layers">
+                        <h3>Python-AI-Based cooking assistant</h3>
+                        <p>This product can provide recipes according to any given restrictions or ingredients.</p>
+                        <a href="#gordon">Learn more</a>
+                    </div>
+                </div>
+                <div class="works">
+                    <img src="images/Uniwork4.png">
+                    <div class="layers">
+                        <h3>Processing-PhysicBalls</h3>
+                        <p>This is the end assignment for algorithms. It displays a physics ball game.</p>
+                        <a href="#physicball">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Home</a>
+        </div>
+    </div>
+
+    <div id="japanese">
+        <div class="container">
+            <h1 class="sub-title">3D model-Japanese house</h1>
+            <div class="japaneserow">
+                <div class="japanesecontext">
+                    <div class="japanesecontext1">
+                        <h2>This is a 3D model of a moder japanses house.<br>The first assignment
+                            I had for the interactive course. Dragged my interest into 3D modeling.</h2>
+                    </div>
+                    <div class="japanesecontext2">
+                        <p>This assignment dragged my interest for 3D modeling and really influenced me a lot.
+                            Within this assignment, I am capable of fluently using different modifier,
+                            tools, and some UV texture mapping.
+                        </p>
+                    </div>
+                </div>
+                <div class="japaneseimage">
+                    <img src="images/japanesehouse1.png">
+                </div>
+                <a href="#" class="japanesehome">Home</a>
+                <a href="#glider" class="japanesenext">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="glider">
+        <div class="container">
+            <h1 class="sub-title">3D model-Flying machine</h1>
+            <div class="gliderrow">
+                <div class="gliderimage">
+                    <img src="images/glider1.png">
+                </div>
+                <div class="glidercontext">
+                    <div class="glidercontext1">
+                        <h2>This is a 3D model of the Da Vinci flying machine.<br>The final
+                            assignment of the IV course.<br>Knowing what I am capable of in 3D modeling
+                            and evoked my passion towards 3D modeling.
+                        </h2>
+                    </div>
+                    <div class="glidercontext2">
+                        <p>This assignment does not have any instructions, which means that it really
+                            depend on myself. By comparing to the first assignment, I really see the 
+                            improvement in 3D modeling.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="gliderhome">Home</a>
+            <a href="#gordon" class="glidernext">Next</a>
+        </div>
+    </div>
+
+    <div id="gordon">
+        <div class="container">
+            <h1 class="sub-title">Project-Ai cooking assistant</h1>
+            <div class="gordonrow">
+                <div class="gordoncontext">
+                    <div class="gordoncontext1">
+                        <h2>The task was to implement an AI technology<br>to our daily lifes, and 
+                            we made an AI-based cooking assistant which will provide recipes with 
+                            the given ingredients</h2>
+                    </div>
+                    <div class="gordoncontext2">
+                        <p>The program was made in Python languae, and this was also the first
+                            time that I am working on something about AI technology. The result was
+                            very positive and I was very surprised of how much I can make use of my knowlage.
+                        </p>
+                    </div>
+                </div>
+                <div class="gordonimage">
+                    <img src="images/gordon1.jpg">
+                </div>
+            </div>
+            <a href="#" class="gordonhome">Home</a>
+            <a href="#physicball" class="gordonnext">Next</a>
+        </div>
+    </div>
+
+    <div id="physicball">
+        <div class="container">
+            <h1 class="sub-title">Processing-Physic balls</h1>
+            <div class="physicballrow">
+                <div class="physicballimage">
+                    <img src="images/physicball1.png">
+                </div>
+                <div class="physicballcontext">
+                    <div class="physicballcontext1">
+                        <h2>A processing program that displays a physic ball game.<br>Contains
+                            different topic from particles and normal distributions to perlin
+                            noise and forces.</h2>
+                    </div>
+                    <div class="physicballcontext2">
+                        <p>This was the end assignment for programming course in module 4, and 
+                            the task was from all 7 topic that I have learnt in this module, include
+                            as much as possible. In the end I was very surprised that I can make a 
+                            entire game out.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="physicballhome">Home</a>
+        </div>
+    </div>
+    <script>
+        var taplinks = document.getElementsByClassName('tap-links');
+        var tapcontents = document.getElementsByClassName('tap-contents');
+
+        function opentap(tapname){
+            for(taplink of taplinks){
+                taplink.classList.remove("active-link")
+            }
+            for(tapcontent of tapcontents){
+                tapcontent.classList.remove("active-tap")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tapname).classList.add("active-tap");
+        }
+    </script>
+
+</body>
+</html>
